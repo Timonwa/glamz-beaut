@@ -3,9 +3,9 @@
 /*? ========== */
 /** offline font links */
 @font-face {
-    font-family: "name";
-    src: url('');
-  }
+  font-family: "name";
+  src: url("");
+}
 /*! root file */
 :root {
   /** variables */
@@ -168,7 +168,7 @@ ul {
   height: var(--nav-height);
   padding: 20px 50px;
   position: relative;
-  border-bottom: 2px solid var(--main-bg2);
+  color: var(--main-color2);
 }
 /* logo */
 .nav-wrapper > .logo > p {
@@ -185,21 +185,16 @@ ul {
   display: flex;
   flex-direction: row;
 }
-.nav-wrapper > .nav-bar > ul > li > a {
-  margin: 0 20px;
-  color: var(--main-bg2);
-}
 .nav-wrapper > .nav-bar > ul > li {
+  margin: 0 20px;
 }
-.nav-wrapper > .nav-bar > ul > li > i {
-  font-size: 0.8em;
-  margin-left: 2px;
+.nav-wrapper > .nav-bar > ul > li > a {
+  color: var(--main-color2);
 }
 /* burger menu */
 .nav-wrapper > .burger-menu {
   display: none;
 }
-
 /*! ===== */
 /** burger menu */
 /* medium=768px */
