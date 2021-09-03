@@ -6,12 +6,12 @@ menu.addEventListener("click", function () {
     if (document.querySelector(".open").style.display === "block") {
         document.querySelector(".open").style.display = "none";
         document.querySelector(".close").style.display = "block";
-        document.querySelector(".nav-bar").style.zIndex = "1";
+        document.querySelector(".nav-bar").style.top = "var(--nav-height)";
     }
     else {
         document.querySelector(".open").style.display = "block";
         document.querySelector(".close").style.display = "none";
-        document.querySelector(".nav-bar").style.zIndex = "-1";
+        document.querySelector(".nav-bar").style.top = "-50vh";
     }
 });
 

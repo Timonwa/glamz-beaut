@@ -12,6 +12,7 @@
   /* main color variables */
   --main-bg: rgb(255, 255, 255);
   --main-bg2: orange;
+  --clear-bg: rgba(0, 0, 0, 0.5);
   --main-color: #333333;
   --main-color2: orange;
   --white: #fff;
@@ -161,14 +162,18 @@ ul {
 /*? ========== */
 /** nav bar */
 .nav-wrapper {
+  position: fixed;
+  top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: var(--nav-height);
   padding: 20px 50px;
-  position: relative;
   color: var(--main-color2);
+  background-color: var(--clear-bg);
+  z-index: 10;
+  width: 100vw;
 }
 /* logo */
 .nav-wrapper > .logo > p {
@@ -178,7 +183,7 @@ ul {
 /* nav bar */
 .nav-wrapper > .nav-bar {
   text-align: right;
-  z-index: 1;
+  position: relative;
 }
 /* nav bar links */
 .nav-wrapper > .nav-bar > ul {
@@ -201,14 +206,18 @@ ul {
 @media screen and (max-width: 768px) {
   /* nav bar */
   .nav-wrapper > .nav-bar {
-    z-index: -1;
     position: absolute;
-    top: var(--nav-height);
+    top: -50vh;
     left: 0;
-    background-color: var(--main-bgc);
+    background-color: var(--clear-bg);
     width: 100vw;
     height: 50vh;
     text-align: center;
+    transition: top 500ms;
+    -webkit-transition: top 500ms;
+    -moz-transition: top 500ms;
+    -ms-transition: top 500ms;
+    -o-transition: top 500ms;
   }
   .nav-wrapper > .burger-menu {
     display: block;
