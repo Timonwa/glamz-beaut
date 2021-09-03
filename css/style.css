@@ -10,17 +10,17 @@
 :root {
   /** variables */
   /* main color variables */
-  --main-bg: ;
-  --main-bg2: ;
-  --main-color: ;
-  --main-color2: ;
+  --main-bg: rgb(255, 255, 255);
+  --main-bg2: orange;
+  --main-color: #333333;
+  --main-color2: orange;
   --white: #fff;
   --black: #000;
 
   /* dimensions */
-  --nav-height: ;
-  --section-div-margin: ;
-  --section-div-padding: ;
+  --nav-height: 60px;
+  --section-div-margin: 0 100px;
+  --section-div-padding: 20px;
 }
 /** all elements */
 * {
@@ -159,3 +159,85 @@ ul {
 /*? ==========  */
 /*? end of basic css styles */
 /*? ========== */
+/** nav bar */
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  padding: 20px 50px;
+  position: relative;
+  border-bottom: 2px solid var(--main-bg2);
+}
+/* logo */
+.nav-wrapper > .logo > p {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+/* nav bar */
+.nav-wrapper > .nav-bar {
+  text-align: right;
+  z-index: 1;
+}
+/* nav bar links */
+.nav-wrapper > .nav-bar > ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-wrapper > .nav-bar > ul > li > a {
+  margin: 0 20px;
+  color: var(--main-bg2);
+}
+.nav-wrapper > .nav-bar > ul > li {
+}
+.nav-wrapper > .nav-bar > ul > li > i {
+  font-size: 0.8em;
+  margin-left: 2px;
+}
+/* burger menu */
+.nav-wrapper > .burger-menu {
+  display: none;
+}
+
+/*! ===== */
+/** burger menu */
+/* medium=768px */
+@media screen and (max-width: 768px) {
+  /* nav bar */
+  .nav-wrapper > .nav-bar {
+    z-index: -1;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    background-color: var(--main-bgc);
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+  }
+  .nav-wrapper > .burger-menu {
+    display: block;
+  }
+  .nav-wrapper > .burger-menu > .burger-menu-toggle > span > .close {
+    display: none;
+  }
+  /* nav bar links */
+  .nav-wrapper > .nav-bar > ul {
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+/* medium=768px */
+@media screen and (max-width: 500px) {
+  .fcf-btn {
+    width: 100%;
+  }
+}
+
+/*! ===== */
+/** javascript css */
+/* active state for the webpage that is currently viewed by the user */
+.active {
+  font-weight: 700;
+}
