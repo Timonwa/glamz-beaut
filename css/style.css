@@ -200,6 +200,11 @@ ul {
 .nav-wrapper > .burger-menu {
   display: none;
 }
+/** javascript css for nav menu */
+/* active state for the webpage that is currently viewed by the user */
+.active {
+  font-weight: 700;
+}
 /*! ===== */
 /** burger menu */
 /* medium=768px */
@@ -238,10 +243,43 @@ ul {
     width: 100%;
   }
 }
-
 /*! ===== */
-/** javascript css */
-/* active state for the webpage that is currently viewed by the user */
-.active {
-  font-weight: 700;
+section#about {
+  width: 100vw;
+  height: 100vh;
+  padding: var(--section-div-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#services > div > article.bridal {
+  background-image: url(/img/ankara-headgear.jpg);
+}
+section#services > div > article.studio {
+  background-image: url(/img/young-ladies.jpg);
+}
+section#services > div > article.event {
+  background-image: url(/img/black-girl-outside.jpg);
+}
+section#services > div > article {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+section#services > div > article > .article-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--section-div-padding);
+}
+section#services > div > article > .article-content> button {
+ background-color: transparent;
+ border: 1px solid #fff;
+ font-weight: bold;
+ padding: 10px 20px;
+ color: white;
 }
