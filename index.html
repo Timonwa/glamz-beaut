@@ -6,42 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--* The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- title -->
-    <title>Glamz Beaut | Home</title>
+    <title>Glamz Beaut</title>
 
-    <!--* fonts -->
-    <!-- fonts online -->
-    <link rel="preconnect" href="" />
-    <link href="" />
-    <!-- fonts offline -->
+    <!--* Fonts -->
+    <!-- Google fonts offline -->
     <link rel="preload" href="" as="fonts" />
+    <link href="" />
+    <!-- Google fonts online -->
+    <link rel="preconnect" href="" />
 
-    <!--* FontAwesome -->
+    <!--* Icons -->
+    <!-- FontAwesome offline -->
+    <link rel="stylesheet" href="fontawesome5.15\css\all.css" />
     <!-- FontAwesome online -->
     <script
       src="https://kit.fontawesome.com/dfede42a17.js"
       crossorigin="anonymous"
     ></script>
-    <!-- FontAwesome offline -->
-    <link rel="stylesheet" href="fontawesome5.15\css\all.css" />
 
-    <!--* Bootstrap CSS -->
-    <!-- Bootstrap CSS online -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
+    <!--* CSS -->
+    <!--* CSS (resets) -->
+    <!-- Normalize.css -->
+    <!-- This comes first -->
+    <link rel="stylesheet" type="text/css" href="css/normalise.css" />
+    <!-- My CSS reset -->
+    <!-- This comes second -->
+    <link rel="stylesheet" type="text/css" href="css/my-css-reset.css" />
+    <!-- My Font reset -->
+    <!-- This comes third -->
+    <link rel="stylesheet" type="text/css" href="css/my-font-reset.css" />
+
+    <!--* CSS (Bootstrap) -->
     <!-- Bootstrap CSS offline -->
     <link
       rel="stylesheet"
       type="text/css"
       href="bootstrap5.0\css\bootstrap.min.css"
     />
+    <!-- Bootstrap CSS online -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
 
-    <!--* My CSS code -->
+    <!--* CSS (My codes) -->
     <!-- main CSS styles -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
@@ -114,42 +126,34 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="/img/ankara-headgear.jpg"
+                src="/img/bridal-makeup.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-md-block">
-                <h5>Wedding</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/prof-makeup.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
               <img
-                src="/img/black-girl-outside.jpg"
+                src="/img/effects-makeup.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-md-block">
-                <h5>Photo Shoot</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="/img/young-ladies.jpg"
+                src="/img/studio-makeup.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-md-block">
-                <h5>Owambe</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/inshop-makeup.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
           <button
@@ -175,8 +179,8 @@
 
       <!-- main section -->
       <main>
-        <section id="about">
-          <div>
+        <section id="about" class="w-100 vh-100 bg-success">
+          <div class="mx-5">
             <h2>We are Glamz Beaut</h2>
             <div>
               <p>
@@ -204,7 +208,7 @@
                 <button>Book Now</button>
               </div>
             </article>
-            <article  class="studio">
+            <article class="studio">
               <div class="article-content">
                 <h3>Bridal Makeup</h3>
                 <button>Book Now</button>
@@ -221,29 +225,19 @@
       </main>
     </div>
 
-    <!--* Bootstrap Online JavaScript, jQuery, Popper; choose one of the two! -->
-    <!--todo Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--* JavaScripts -->
+    <!--* Bootstrap Javascript -->
+    <!-- Bootstrap: Offline Javascript and Popper -->
+    <script src="bootstrap5.0\js\bootstrap.min.js"></script>
+    <!-- Bootstrap: Online JavaScript and Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-
-    <!--* Bootstrap Offline jQuery, Popper (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- bootstrap Javascript offline -->
-    <script
-      type="text/javascript"
-      src="bootstrap5.0\js\bootstrap.min.js"
-    ></script>
-    <!-- [offline] Include all compiled plugins (below), or include individual files as needed -->
-    <!-- bootstrap jQuery offline -->
-    <script
-      type="text/javascript"
-      src="bootstrap5.0\js\jquery-3.5.1.min.js"
-    ></script>
-
-    <!--* My Javascript code link -->
-    <!-- main Javascript code -->
-    <script type="text/javascript" src="/js/script.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--* My Javascript codes -->
+    <!-- Main Javascript code -->
+    <script src="script.js"></script>
   </body>
 </html>
