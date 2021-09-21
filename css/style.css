@@ -8,10 +8,10 @@
   /** variables */
   /* main color variables */
   --main-bg: rgb(255, 255, 255);
-  --main-bg2: orange;
+  --main-bg2: #ffa500;
   --clear-bg: rgba(0, 0, 0, 0.5);
-  --main-color: #333333;
-  --main-color2: orange;
+  --main-color: #ffa500;
+  --main-color2: #333333;
   --white: #fff;
   --black: #000;
 
@@ -39,7 +39,7 @@
   justify-content: space-between;
   height: var(--nav-height);
   padding: 20px 50px;
-  color: var(--main-color2);
+  color: var(--main-color);
   background-color: var(--clear-bg);
   z-index: 10;
   width: 100vw;
@@ -68,7 +68,7 @@
   margin: 0 20px;
 }
 .nav-wrapper > .nav-bar > ul > li > a {
-  color: var(--main-color2);
+  color: var(--main-color);
 }
 /* burger menu */
 .nav-wrapper > .burger-menu {
@@ -130,7 +130,7 @@ section#about {
 }
 @media screen and (min-width: 768px) {
   section#about {
-    height: 50vh;
+    height: 400px;
   }
 }
 section#services > div > article {
@@ -171,4 +171,7 @@ section#services > div > article {
 }
 section#services > div > article > div {
   background-color: var(--clear-bg);
+}
+footer > * {
+  color: var(--main-color)
 }
