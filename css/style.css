@@ -1,6 +1,3 @@
-/*? ==========  */
-/*? beginning of basic css styles */
-/*? ========== */
 /** offline font links */
 @font-face {
   font-family: "name";
@@ -11,166 +8,38 @@
   /** variables */
   /* main color variables */
   --main-bg: rgb(255, 255, 255);
-  --main-bg2: orange;
+  --main-bg2: #ffa500;
   --clear-bg: rgba(0, 0, 0, 0.5);
-  --main-color: #333333;
-  --main-color2: orange;
+  --main-color: #ffa500;
+  --main-color2: #333333;
   --white: #fff;
   --black: #000;
 
   /* dimensions */
   --nav-height: 60px;
-  --section-div-margin: 0 100px;
-  --section-div-padding: 20px;
+  /* --section-div-margin: 0 100px;
+  --section-div-padding: 20px; */
 }
-/** all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/** large screen=1024px (960px-1024px) */
-/* body */
-body {
-  font-size: 18px;
-  font-family: sans-serif;
-  font-weight: normal;
-  background-color: var(--main-bgc);
-  color: var(--main-color);
-}
-/* text elements */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  line-height: 150%;
-  text-align: center;
-}
-h1 {
-  margin-bottom: 0.8rem;
-}
-h2 {
-  margin-bottom: 0.75rem;
-}
-h3 {
-  margin-bottom: 0.6rem;
-}
-h4 {
-  margin-bottom: 0.5rem;
-}
-h5 {
-  margin-bottom: 0.4rem;
-}
-h6 {
-  margin-bottom: 0.3rem;
-}
-/** to ensure that when you click on an id link, the header will not cover the beginning of the content the id is pointing to */
-[id] {
-  scroll-margin-top: 5em;
-}
-/** resets the link states to the page's main color and no decoration */
-a,
-a:link,
-a:hover,
-a:active,
-a:visited {
-  text-decoration: none;
-  color: var(--main-color);
-}
-/** removing the outline when inputs are on focus */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-/** button */
-button {
-  cursor: pointer;
-}
-/** list */
-ul {
-  list-style: none;
-  list-style-position: unset;
-}
-/*! ===== LARGE SCREEN FIRST RWD ===== */
-/*! the ffg queries determine the font size and line height and any other basic styles of the elements in the file */
-/*! the main media queries are located at the end of this file this is just the default media query styles */
-/** extra-large=1440px+ */
-@media screen and (max-width: 1440px) {
-  /* body */
-  body {
-    font-size: 19px;
-  }
-}
-/** medium=608px (608px-960px) */
-@media screen and (max-width: 960px) {
-  /* body */
-  body {
-    font-size: 17px;
-  }
-  /* text elements */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    line-height: 140%;
-  }
-}
-/** small=400px (400px-608px) */
-@media screen and (max-width: 608px) {
-  /* body */
-  body {
-    font-size: 16px;
-  }
-  /* text elements */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    line-height: 130%;
-  }
-}
-/** small=400px (400px and below) */
-@media screen and (max-width: 400px) {
-  /* body */
-  body {
-    font-size: 16px;
-  }
-  /* text elements */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    line-height: 130%;
-  }
-}
-/*? ==========  */
-/*? end of basic css styles */
-/*? ========== */
 /** nav bar */
 .nav-wrapper {
   position: fixed;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: var(--nav-height);
   padding: 20px 50px;
-  color: var(--main-color2);
+  color: var(--main-color);
   background-color: var(--clear-bg);
   z-index: 10;
   width: 100vw;
@@ -187,14 +56,19 @@ ul {
 }
 /* nav bar links */
 .nav-wrapper > .nav-bar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .nav-wrapper > .nav-bar > ul > li {
   margin: 0 20px;
 }
 .nav-wrapper > .nav-bar > ul > li > a {
-  color: var(--main-color2);
+  color: var(--main-color);
 }
 /* burger menu */
 .nav-wrapper > .burger-menu {
@@ -233,7 +107,12 @@ ul {
   /* nav bar links */
   .nav-wrapper > .nav-bar > ul {
     height: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
@@ -244,42 +123,56 @@ ul {
   }
 }
 /*! ===== */
+
+/* ===== */
 section#about {
-  width: 100vw;
   height: 100vh;
-  padding: var(--section-div-padding);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='243.35' height='281' viewBox='0 0 69.2820323027551 80' patternUnits='userSpaceOnUse' patternTransform='rotate(233)'%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 255, 255,1)'/%3E%3Cpath d='M54.56 51.5L52.83 52.5L51.1 51.5L51.1 49.5L52.83 48.5L54.56 49.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M36.37 62L34.64 63L32.91 62L32.91 60L34.64 59L36.37 60z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M18.18 51.5L16.45 52.5L14.72 51.5L14.72 49.5L16.45 48.5L18.18 49.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M18.18 30.5L16.45 31.5L14.72 30.5L14.72 28.5L16.45 27.5L18.18 28.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M36.37 20L34.64 21L32.91 20L32.91 18L34.64 17L36.37 18z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M54.56 30.5L52.83 31.5L51.1 30.5L51.1 28.5L52.83 27.5L54.56 28.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M45.9 46.5L34.64 53L23.38 46.5L23.38 33.5L34.64 27L45.9 33.5z' stroke-linejoin='miter' fill='rgba(221, 221, 221,1)'/%3E%3C/pattern%3E%3Cfilter id='filter-doodad-1'%3E%3CfeTurbulence baseFrequency='0.2 0.01' numOctaves='2' result='result1'/%3E%3CfeDisplacementMap in2='result1' scale='5' result='result2' xChannelSelector='R' yChannelSelector='G' in='SourceGraphic'/%3E%3CfeComposite in2='result2' in='SourceGraphic' operator='atop' result='compositeGraphic'/%3E%3CfeOffset in='compositeGraphic' result='fbSourceGraphic' dy='-0.5'/%3E%3C/filter%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
 }
-section#services > div > article.bridal {
-  background-image: url(/img/ankara-headgear.jpg);
+@media screen and (min-width: 768px) {
+  section#about {
+    height: 400px;
+  }
 }
-section#services > div > article.studio {
-  background-image: url(/img/young-ladies.jpg);
+section#services > div > article {
+  width: 100vw;
+  height: 100vw;
 }
-section#services > div > article.event {
-  background-image: url(/img/black-girl-outside.jpg);
+@media screen and (min-width: 1024px) {
+  section#services > div > article {
+    height: 100vh;
+  }
+}
+section#services > div > article > div {
+  width: inherit;
+  height: inherit;
+}
+section#services > div > article:nth-child(odd) {
+  background-color: #808080;
+}
+section#services > div > article:nth-child(even) {
+  background-color: #777373;
+}
+section#services > div > article.bridal-makeup {
+  background-image: url(/img/bridal-makeup.jpg);
+}
+section#services > div > article.party-makeup {
+  background-image: url(/img/lip-makeup.jpg);
+}
+section#services > div > article.effects-makeup {
+  background-image: url(/img/effects-makeup.jpg);
+}
+section#services > div > article.home-service {
+  background-image: url(/img/prof-makeup.jpg);
 }
 section#services > div > article {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
 }
-section#services > div > article > .article-content {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: var(--section-div-padding);
+section#services > div > article > div {
+  background-color: var(--clear-bg);
 }
-section#services > div > article > .article-content> button {
- background-color: transparent;
- border: 1px solid #fff;
- font-weight: bold;
- padding: 10px 20px;
- color: white;
+footer > * {
+  color: var(--main-color);
 }

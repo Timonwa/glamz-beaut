@@ -6,42 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--* The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- title -->
-    <title>Glamz Beaut | Home</title>
+    <title>Glamz Beaut</title>
 
-    <!--* fonts -->
-    <!-- fonts online -->
-    <link rel="preconnect" href="" />
-    <link href="" />
-    <!-- fonts offline -->
+    <!--* Fonts -->
+    <!-- Google fonts offline -->
     <link rel="preload" href="" as="fonts" />
+    <link href="" />
+    <!-- Google fonts online -->
+    <link rel="preconnect" href="" />
 
-    <!--* FontAwesome -->
+    <!--* Icons -->
+    <!-- FontAwesome offline -->
+    <link rel="stylesheet" href="fontawesome5.15\css\all.css" />
     <!-- FontAwesome online -->
     <script
       src="https://kit.fontawesome.com/dfede42a17.js"
       crossorigin="anonymous"
     ></script>
-    <!-- FontAwesome offline -->
-    <link rel="stylesheet" href="fontawesome5.15\css\all.css" />
 
-    <!--* Bootstrap CSS -->
-    <!-- Bootstrap CSS online -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
+    <!--* CSS -->
+    <!--* CSS (resets) -->
+    <!-- Normalize.css -->
+    <!-- This comes first -->
+    <link rel="stylesheet" type="text/css" href="css/normalise.css" />
+    <!-- My CSS reset -->
+    <!-- This comes second -->
+    <link rel="stylesheet" type="text/css" href="css/my-css-reset.css" />
+    <!-- My Font reset -->
+    <!-- This comes third -->
+    <link rel="stylesheet" type="text/css" href="css/my-font-reset.css" />
+
+    <!--* CSS (Bootstrap) -->
     <!-- Bootstrap CSS offline -->
     <link
       rel="stylesheet"
       type="text/css"
       href="bootstrap5.0\css\bootstrap.min.css"
     />
+    <!-- Bootstrap CSS online -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
 
-    <!--* My CSS code -->
+    <!--* CSS (My codes) -->
     <!-- main CSS styles -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
@@ -114,42 +126,34 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="/img/ankara-headgear.jpg"
+                src="/img/bridal-makeup.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-md-block">
-                <h5>Wedding</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/prof-makeup.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
               <img
-                src="/img/black-girl-outside.jpg"
+                src="/img/effects-makeup.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-md-block">
-                <h5>Photo Shoot</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="/img/young-ladies.jpg"
+                src="/img/studio-makeup.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-md-block">
-                <h5>Owambe</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/inshop-makeup.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
           <button
@@ -175,8 +179,8 @@
 
       <!-- main section -->
       <main>
-        <section id="about">
-          <div>
+        <section id="about" class="w-100">
+          <div class="p-3 p-md-5">
             <h2>We are Glamz Beaut</h2>
             <div>
               <p>
@@ -196,54 +200,204 @@
         </section>
 
         <!-- services rendered -->
-        <section id="services">
-          <div>
-            <article class="bridal">
-              <div class="article-content">
-                <h3>Bridal Makeup</h3>
-                <button>Book Now</button>
+        <section id="services" class="w-100">
+          <div class="">
+            <article
+              class="
+                bridal-makeup
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h2 class="text-white">Bridal Makeup</h2>
+                <button class="btn btn-outline-light">Book Now</button>
               </div>
             </article>
-            <article  class="studio">
-              <div class="article-content">
-                <h3>Bridal Makeup</h3>
-                <button>Book Now</button>
+            <article
+              class="
+                party-makeup
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h2 class="text-white">Party Makeup</h2>
+                <button class="btn btn-outline-light">Book Now</button>
               </div>
             </article>
-            <article class="event">
-              <div class="article-content">
-                <h3>Bridal Makeup</h3>
-                <button>Book Now</button>
+            <article
+              class="
+                effects-makeup
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h2 class="text-white">Effects Makeup</h2>
+                <button class="btn btn-outline-light">Book Now</button>
+              </div>
+            </article>
+            <article
+              class="
+                home-service
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h2 class="text-white">Home Service</h2>
+                <button class="btn btn-outline-light">Book Now</button>
               </div>
             </article>
           </div>
         </section>
       </main>
+
+      <section id="contact-form" class="p-3">
+        <div
+          class="
+            m-auto
+            pt-3
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+          "
+        >
+          <h3 class="">Say Hi!</h3>
+          <div class="form-section">
+            <form
+              id="fcf-form-id"
+              class=""
+              method="POST"
+              action="https://formsubmit.co/9222121d7125650b58bf407dd995ce82"
+            >
+              <input
+                type="hidden"
+                name="_next"
+                value="https://glamzbeaut.vercel.app/thank-you.html"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Enquiry from Glamz Beaut!"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <div class="mb-3 row">
+                <label for="name" class="form-label">Your name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 row">
+                <label for="email" class="form-label">Your email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 row">
+                <label for="message" class="form-label">Your message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="6"
+                  maxlength="3000"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-3 row">
+                <button
+                  type="submit"
+                  id=""
+                  class="btn btn-outline-dark form-control"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+          bg-dark
+          p-3
+        "
+      >
+        <address>
+          <a href="http://"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+          <a href="http://"><i class="fab fa-whatsapp fa-lg fa-fw"></i></a>
+          <a href="http://"><i class="fas fa-envelope fa-lg fa-fw"></i></a>
+        </address>
+        <address>
+          <a href="http://">@glamzbeaut</a>
+          <p>Lagos, Nigeria</p>
+        </address>
+      </footer>
     </div>
 
-    <!--* Bootstrap Online JavaScript, jQuery, Popper; choose one of the two! -->
-    <!--todo Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--* JavaScripts -->
+    <!--* Bootstrap Javascript -->
+    <!-- Bootstrap: Offline Javascript and Popper -->
+    <script src="bootstrap5.0\js\bootstrap.min.js"></script>
+    <!-- Bootstrap: Online JavaScript and Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-
-    <!--* Bootstrap Offline jQuery, Popper (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- bootstrap Javascript offline -->
-    <script
-      type="text/javascript"
-      src="bootstrap5.0\js\bootstrap.min.js"
-    ></script>
-    <!-- [offline] Include all compiled plugins (below), or include individual files as needed -->
-    <!-- bootstrap jQuery offline -->
-    <script
-      type="text/javascript"
-      src="bootstrap5.0\js\jquery-3.5.1.min.js"
-    ></script>
-
-    <!--* My Javascript code link -->
-    <!-- main Javascript code -->
-    <script type="text/javascript" src="/js/script.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--* My Javascript codes -->
+    <!-- Main Javascript code -->
+    <script src="script.js"></script>
   </body>
 </html>

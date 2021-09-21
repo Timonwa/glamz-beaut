@@ -1,0 +1,36 @@
+/** all elements */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/** to ensure that when you click on an id link, the header will not cover the beginning of the content the id is pointing to */
+[id] {
+  scroll-margin-top: 5em;
+}
+/** reset the link states to the page's main color and no decoration */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: var(--main-color);
+}
+/** removing the outline when inputs are on focus */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/** button */
+button {
+  cursor: pointer;
+}
+/** list */
+ul {
+  list-style: none;
+  list-style-position: unset;
+}
