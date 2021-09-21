@@ -126,7 +126,7 @@
 
 
 /* ===== */
-section#about {
+/* section#about {
   width: 100vw;
   height: 100vh;
   padding: var(--section-div-padding);
@@ -185,4 +185,4 @@ section#services > div > article > .article-content > button {
   padding: 10px 20px;
   margin-top: 10px;
   color: white;
-}
+} */
