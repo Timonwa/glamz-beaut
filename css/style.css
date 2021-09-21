@@ -29,14 +29,14 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: var(--nav-height);
   padding: 20px 50px;
   color: var(--main-color2);
@@ -61,8 +61,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 .nav-wrapper > .nav-bar > ul > li {
   margin: 0 20px;
@@ -109,11 +109,11 @@
     height: inherit;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 }
 /* medium=768px */
@@ -124,65 +124,51 @@
 }
 /*! ===== */
 
-
 /* ===== */
-/* section#about {
-  width: 100vw;
+section#about {
   height: 100vh;
-  padding: var(--section-div-padding);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-section#services > div > article.bridal {
-  background-image: url(/img/ankara-headgear.jpg);
+@media screen and (min-width: 768px) {
+  section#about {
+    height: 50vh;
+  }
 }
-section#services > div > article.studio {
-  background-image: url(/img/young-ladies.jpg);
+section#services > div > article {
+  width: 100vw;
+  height: 100vw;
 }
-section#services > div > article.event {
-  background-image: url(/img/black-girl-outside.jpg);
+@media screen and (min-width: 1024px) {
+  section#services > div > article {
+    height: 100vh;
+  }
+}
+section#services > div > article > div {
+  width: inherit;
+  height: inherit;
+}
+section#services > div > article:nth-child(odd) {
+  background-color: #808080;
+}
+section#services > div > article:nth-child(even) {
+  background-color: #777373;
+}
+section#services > div > article.bridal-makeup {
+  background-image: url(/img/bridal-makeup.jpg);
+}
+section#services > div > article.party-makeup {
+  background-image: url(/img/lip-makeup.jpg);
+}
+section#services > div > article.effects-makeup {
+  background-image: url(/img/effects-makeup.jpg);
+}
+section#services > div > article.home-service {
+  background-image: url(/img/prof-makeup.jpg);
 }
 section#services > div > article {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
 }
-section#services > div > article > .article-content {
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: var(--section-div-padding);
+section#services > div > article > div {
+  background-color: var(--clear-bg);
 }
-@media screen and (max-width: 600px) {
-  section#services > div > article > .article-content {
-    height: 100vw;
-  }
-}
-section#services > div > article > .article-content > button {
-  background-color: transparent;
-  border: 1px solid #fff;
-  font-weight: bold;
-  padding: 10px 20px;
-  margin-top: 10px;
-  color: white;
-} */
