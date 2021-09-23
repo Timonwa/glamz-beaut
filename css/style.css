@@ -76,10 +76,10 @@
 /*! ===== */
 /** burger menu */
 /* medium=768px */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   /* nav bar */
   .nav-wrapper > .nav-bar {
-  position: absolute;
+    position: absolute;
     top: -50vh;
     left: 0;
     background-color: var(--clear-bg);
@@ -163,5 +163,4 @@ section#services > div > article > div {
 }
 footer > * {
   color: var(--main-color);
-}
 }
