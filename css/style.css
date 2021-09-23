@@ -52,7 +52,6 @@
 /* nav bar */
 .nav-wrapper > .nav-bar {
   text-align: right;
-  position: relative;
 }
 /* nav bar links */
 .nav-wrapper > .nav-bar > ul {
@@ -77,10 +76,10 @@
 /*! ===== */
 /** burger menu */
 /* medium=768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   /* nav bar */
   .nav-wrapper > .nav-bar {
-    position: absolute;
+  position: absolute;
     top: -50vh;
     left: 0;
     background-color: var(--clear-bg);
@@ -109,12 +108,6 @@
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-  }
-}
-/* medium=768px */
-@media screen and (max-width: 500px) {
-  .fcf-btn {
-    width: 100%;
   }
 }
 /*! ===== */
@@ -170,4 +163,5 @@ section#services > div > article > div {
 }
 footer > * {
   color: var(--main-color);
+}
 }
