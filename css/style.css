@@ -41,7 +41,7 @@
   padding: 20px 50px;
   color: var(--main-color);
   background-color: var(--clear-bg);
-  z-index: 10;
+  z-index: 100000;
   width: 100vw;
 }
 /* logo */
@@ -73,11 +73,6 @@
 /* burger menu */
 .nav-wrapper > .burger-menu {
   display: none;
-}
-/** javascript css for nav menu */
-/* active state for the webpage that is currently viewed by the user */
-.active {
-  font-weight: 700;
 }
 /*! ===== */
 /** burger menu */
