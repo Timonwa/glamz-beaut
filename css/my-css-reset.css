@@ -7,7 +7,7 @@
 }
 /** to ensure that when you click on an id link, the header will not cover the beginning of the content the id is pointing to */
 [id] {
-  scroll-margin-top: 5em;
+  scroll-margin-top: calc(var(--nav-height) + 5rem);
 }
 /** reset the link states to the page's main color and no decoration */
 a,
