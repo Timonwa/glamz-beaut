@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 /** to ensure that when you click on an id link, the header will not cover the beginning of the content the id is pointing to */
 [id] {
