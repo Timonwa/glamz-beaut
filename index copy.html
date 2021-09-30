@@ -299,90 +299,82 @@
       </main>
 
       <section id="contact" class="m-3 px-3">
-        <!--* contact form cntr -->
-          <div class="contact-form
+        <div
+          class="
             m-auto
             pt-3
             d-flex
             flex-column
             justify-content-center
-            align-items-center">
-            <!-- header -->
-            <h3>Say Hi!</h3>
-            <!-- ! Pointing the action-attribute of your form to our URL will enable submissions to be sent to your email address. -->
-            <!-- ! THIS FORM IS POWERED BY https://formsubmit.co API. -->
+            align-items-center
+          "
+        >
+          <h3 class="">Say Hi!</h3>
+          <div class="form-section">
             <form
-              action="https://formsubmit.co/your@email.com-or-your-random-string"
+              id="fcf-form-id"
+              class=""
               method="POST"
+              action="https://formsubmit.co/9222121d7125650b58bf407dd995ce82"
             >
-              <!-- * hidden form inputs needed by formsubmit.co to perform other form functions. -->
-              <div>
-                <!-- ! _next -->
-                <!-- ? By default, after submitting a form the user is shown the FormSubmit "Thank You" page. You can provide an alternative URL for "Thank You" page. -->
+              <input
+                type="hidden"
+                name="_next"
+                value="https://glamzbeaut.vercel.app/thank-you.html"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Enquiry from Glamz Beaut!"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <div class="mb-3 row">
+                <label for="name" class="form-label">Your name</label>
                 <input
-                  type="hidden"
-                  name="_next"
-                  value="https://yourdomain.co/thanks.html"
-                />
-
-                <!-- ! _subject -->
-                <!-- ? This value is used for the email's subject, so that you can quickly reply to submissions without having to edit the subject line each time. -->
-                <input type="hidden" name="_subject" value="Enquiry from Glamz Beaut!" />
-
-                <!-- ! _honeypot -->
-                <!-- ? Add this "honeypot" field to avoid spam by fooling scrapers. If a value is provided, the submission will be silently ignored. The input should be hidden with CSS. All forms come with reCAPTCHA, which uses advanced machine learning techniques to distinguish between humans and bots, so for most forms this isn't necessary. -->
-                <input type="text" name="_honey" style="display: none" />
-
-                <!-- ! _captcha -->
-                <!-- ? Don't want your users to complete a reCAPTCHA? Each form now comes with the option to disable the reCAPTCHA, so you can maintain complete control over your form. You can even keep reCAPTCHA on a few forms that might be suceptible to spam, while disabling it on others. -->
-                <input type="hidden" name="_captcha" value="false" />
-              </div>
-
-              <!-- * form inputs visible to the user needed by formsubmit.co to perform other form functions. -->
-              <!-- ? Include a name attribute in all form elements (i.e. <input>, <select>, and <textarea>) to receive the submission data. -->
-
-              <!-- input name -->
-              <div class="mb-3 row">
-                <label class="form-label" for="name">Your name</label>
-                <input class="form-control" type="text" name="name" required />
-              </div>
-
-              <!-- input email -->
-              <div class="mb-3 row">
-                <label class="form-label" for="email"
-                  >Your email address</label
-                >
-                <input class="form-control" type="email" name="email" required />
-              </div>
-
-              <!-- input message -->
-              <div class="mb-3 row">
-                <label class="form-label" for="message"
-                  >Your message</label
-                >
-                <textarea
+                  type="text"
+                  id="name"
+                  name="name"
                   class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 row">
+                <label for="email" class="form-label">Your email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 row">
+                <label for="message" class="form-label">Your message</label>
+                <textarea
+                  id="message"
                   name="message"
+                  class="form-control"
                   rows="6"
                   maxlength="3000"
                   required
                 ></textarea>
               </div>
 
-              <!-- ? Submit the form once. This first-time-use will trigger an email requesting confirmation. Note enter the correct client email. You can also get a random-like string to replace your naked email address in the action attribute of your form. Your email address will remain unknown to spam-bots and human visitors. This random string will send to you when you confirm your email address. -->
-              <!-- submit button -->
               <div class="mb-3 row">
-                <label class="form-label" for="submit" hidden
-                  ></label
+                <button
+                  type="submit"
+                  id=""
+                  class="btn btn-outline-dark form-control"
                 >
-                <button class="btn btn-outline-dark form-control" name="button" type="submit"
-                  >Send Message</button
-                >
+                  Send Message
+                </button>
               </div>
             </form>
           </div>
+        </div>
       </section>
-
       <footer
         class="
           d-flex
