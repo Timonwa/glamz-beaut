@@ -1,26 +1,7 @@
-/** offline font links */
 @font-face {
   font-family: "name";
   src: url("");
 }
-/*! root file */
-:root {
-  /** variables */
-  /* main color variables */
-  --main-bgc: rgb(255, 255, 255);
-  --main-bgc2: #ffa500;
-  --clear-bgc: rgba(0, 0, 0, 0.5);
-  --main-color: #ffa500;
-  --main-color2: #333333;
-  --white: #fff;
-  --black: #000;
-
-  /* dimensions */
-  --nav-height: 60px;
-  /* --section-div-margin: 0 100px;
-  --section-div-padding: 20px; */
-} /** nav bar */
-/* nav bar wrapper */
 .nav-wrapper {
   position: fixed;
   top: 0;
@@ -37,38 +18,21 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: var(--nav-height);
+  height: 60px;
   padding: 20px 50px;
-  color: var(--main-color);
-  background-color: var(--clear-bgc);
+  color: #ffa500;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100000;
   width: 100vw;
 }
-
-/* logo */
-/* todo start: pick only one from these variations of nav bar logo */
-/*? p navbar logo */
-.nav-wrapper > .nav-logo > a > p {
+.nav-wrapper .nav-logo p {
   font-weight: 700;
   margin-bottom: 0;
 }
-/*? h4 navbar logo */
-/* .nav-wrapper > .nav-logo > a > h4 {
-  margin-bottom: 0;
-} */
-/*?  img navbar logo */
-/* .nav-wrapper > .nav-logo > a > img {
-  border: 1px solid #000;
-} */
-/* todo end */
-
-/* nav bar */
-.nav-wrapper > .nav-links {
+.nav-wrapper .nav-links {
   text-align: right;
 }
-
-/* nav bar links */
-.nav-wrapper > .nav-links > ul {
+.nav-wrapper .nav-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,48 +41,33 @@
   -ms-flex-direction: row;
   flex-direction: row;
 }
-
-/* nav bar individual links */
-.nav-wrapper > .nav-links > ul > li {
+.nav-wrapper .nav-links li {
   margin: 0 20px;
 }
-
-/* nav bar individual links */
-.nav-wrapper > .nav-links > ul > li > a {
-  color: var(--main-color);
+.nav-wrapper .nav-links a {
+  color: #ffa500;
 }
-
-/* burger menu */
-.nav-wrapper > .burger-menu {
+.nav-wrapper .burger-menu {
   display: none;
 }
-
-/* dropdown menu */
-.dropdown-menu {
+.nav-wrapper .dropdown-menu {
   position: relative;
 }
-
-/* dropdown open arrow */
-.dropdown-open {
+.nav-wrapper .dropdown-open {
   display: inline-block;
 }
-
-/* dropdown links cntr */
-.dropdown-links {
+.nav-wrapper .dropdown-links {
   position: absolute;
   top: 40px;
   width: 100%;
-  background-color: var(--clear-bgc);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-/* dropdown close arrow and dropdown links container */
-.dropdown-close,
-.dropdown-links {
+.nav-wrapper .dropdown-close,
+.nav-wrapper .dropdown-links {
   display: none;
 }
-
-/* individual dropdown links */
-.dropdown-links > li {
+.nav-wrapper .dropdown-close li,
+.nav-wrapper .dropdown-links li {
   padding: 5px 0 10px;
   text-align: center;
 }
@@ -126,12 +75,11 @@
 /** nav link styling on smaller screens where the burger menu becomes visible and the nav links hidden */
 /* 768px screen width and below */
 @media screen and (max-width: 768px) {
-  /* nav bar */
-  .nav-wrapper > .nav-links {
+  .nav-wrapper .nav-links {
     position: absolute;
     top: -50vh;
     left: 0;
-    background-color: var(--clear-bgc);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 50vh;
     text-align: center;
@@ -141,19 +89,13 @@
     -ms-transition: top 500ms;
     -o-transition: top 500ms;
   }
-
-  /* burger menu  */
-  .nav-wrapper > .burger-menu {
+  .nav-wrapper .burger-menu {
     display: block;
   }
-
-  /* burger menu close icon */
-  .nav-wrapper > .burger-menu > .burger-menu-toggle > span > .close {
+  .nav-wrapper .burger-menu > .burger-menu-toggle > span > .close {
     display: none;
   }
-
-  /* nav bar links */
-  .nav-wrapper > .nav-links > ul {
+  .nav-wrapper .nav-links ul {
     height: inherit;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -163,34 +105,30 @@
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
-  /* dropdown menu */
-  .dropdown-menu {
+  .nav-wrapper .dropdown-menu {
     position: static;
   }
-  /* dropdown links cntr */
-  .dropdown-links {
+  .nav-wrapper .dropdown-links {
     position: static;
     background-color: transparent;
   }
-
-  /* individual dropdown links */
-  .dropdown-links > li {
+  .nav-wrapper .dropdown-links li {
     padding-bottom: 5px;
   }
 }
-
 /** javascript css */
 /* active state for the webpage link that is currently viewed by the user */
 .active {
   font-weight: 700;
 }
-/* ! ===== */
 
+/* ! ===== */
 /* ===== */
 section#about {
   /* height: 100vh; */
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='243.35' height='281' viewBox='0 0 69.2820323027551 80' patternUnits='userSpaceOnUse' patternTransform='rotate(233)'%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 255, 255,1)'/%3E%3Cpath d='M54.56 51.5L52.83 52.5L51.1 51.5L51.1 49.5L52.83 48.5L54.56 49.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M36.37 62L34.64 63L32.91 62L32.91 60L34.64 59L36.37 60z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M18.18 51.5L16.45 52.5L14.72 51.5L14.72 49.5L16.45 48.5L18.18 49.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M18.18 30.5L16.45 31.5L14.72 30.5L14.72 28.5L16.45 27.5L18.18 28.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M36.37 20L34.64 21L32.91 20L32.91 18L34.64 17L36.37 18z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M54.56 30.5L52.83 31.5L51.1 30.5L51.1 28.5L52.83 27.5L54.56 28.5z' stroke-linejoin='miter' fill='rgba(255, 165, 0,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M45.9 46.5L34.64 53L23.38 46.5L23.38 33.5L34.64 27L45.9 33.5z' stroke-linejoin='miter' fill='rgba(221, 221, 221,1)'/%3E%3C/pattern%3E%3Cfilter id='filter-doodad-1'%3E%3CfeTurbulence baseFrequency='0.2 0.01' numOctaves='2' result='result1'/%3E%3CfeDisplacementMap in2='result1' scale='5' result='result2' xChannelSelector='R' yChannelSelector='G' in='SourceGraphic'/%3E%3CfeComposite in2='result2' in='SourceGraphic' operator='atop' result='compositeGraphic'/%3E%3CfeOffset in='compositeGraphic' result='fbSourceGraphic' dy='-0.5'/%3E%3C/filter%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
 }
+
 @media screen and (min-width: 768px) {
   section#about {
     height: 400px;
@@ -200,41 +138,41 @@ section#services > div > article {
   width: 100vw;
   height: 100vw;
 }
+
 @media screen and (min-width: 1024px) {
   section#services > div > article {
     height: 100vh;
   }
 }
-section#services > div > article > div {
-  width: inherit;
-  height: inherit;
-}
-section#services > div > article:nth-child(odd) {
-  background-color: #808080;
-}
-section#services > div > article:nth-child(even) {
-  background-color: #777373;
-}
-section#services > div > article.bridal-makeup {
-  background-image: url(/img/bridal-makeup.jpg);
-}
-section#services > div > article.party-makeup {
-  background-image: url(/img/lip-makeup.jpg);
-}
-section#services > div > article.effects-makeup {
-  background-image: url(/img/effects-makeup.jpg);
-}
-section#services > div > article.home-service {
-  background-image: url(/img/prof-makeup.jpg);
-}
-section#services > div > article {
+section#services div article {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section#services > div > article > div {
-  background-color: var(--clear-bgc);
+section#services div article div {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+section#services div article:nth-child(odd) {
+  background-color: #808080;
+}
+section#services div article:nth-child(even) {
+  background-color: #777373;
+}
+section#services div article.bridal-makeup {
+  background-image: url(/img/bridal-makeup.jpg);
+}
+section#services div article.party-makeup {
+  background-image: url(/img/lip-makeup.jpg);
+}
+section#services div article.effects-makeup {
+  background-image: url(/img/effects-makeup.jpg);
+}
+section#services div article.home-service {
+  background-image: url(/img/prof-makeup.jpg);
+}
+
 footer > * {
-  color: var(--main-color);
+  color: #ffa500;
 }

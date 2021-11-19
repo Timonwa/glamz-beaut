@@ -28,7 +28,7 @@ button:focus {
   outline: none;
 }
 /** button */
-button {
+button,input {
   cursor: pointer;
 }
 /** list */
