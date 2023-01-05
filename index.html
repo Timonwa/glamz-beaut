@@ -197,11 +197,11 @@
             <div>
               <p>
                 Welcome to Glams Beaut, a professional makeup artist service
-                based in Lagos, Nigeria. At Glams Beaut, we specialize in creating
-                stunning makeup looks for a variety of occasions including
-                weddings, parties, and special events. Our team of talented
-                artists are skilled in a wide range of techniques including
-                bridal makeup, party makeup, and effects makeup.
+                based in Lagos, Nigeria. At Glams Beaut, we specialize in
+                creating stunning makeup looks for a variety of occasions
+                including weddings, parties, and special events. Our team of
+                talented artists are skilled in a wide range of techniques
+                including bridal makeup, party makeup, and effects makeup.
               </p>
               <p>
                 In addition to our in-studio services, we also offer the
@@ -229,7 +229,11 @@
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <h2 class="text-white">Bridal Makeup</h2>
-                <button class="btn btn-outline-light">Book Now</button>
+                <a href="#contact">
+                  <a href="#contact">
+                    <button class="btn btn-outline-light">Book Now</button></a
+                  ></a
+                >
               </div>
             </article>
             <article
@@ -239,7 +243,9 @@
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <h2 class="text-white">Party Makeup</h2>
-                <button class="btn btn-outline-light">Book Now</button>
+                <a href="#contact">
+                  <button class="btn btn-outline-light">Book Now</button></a
+                >
               </div>
             </article>
             <article
@@ -249,7 +255,9 @@
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <h2 class="text-white">Effects Makeup</h2>
-                <button class="btn btn-outline-light">Book Now</button>
+                <a href="#contact">
+                  <button class="btn btn-outline-light">Book Now</button></a
+                >
               </div>
             </article>
             <article
@@ -259,7 +267,9 @@
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <h2 class="text-white">Home Service</h2>
-                <button class="btn btn-outline-light">Book Now</button>
+                <a href="#contact">
+                  <button class="btn btn-outline-light">Book Now</button></a
+                >
               </div>
             </article>
           </div>
@@ -272,43 +282,8 @@
           class="contact-form m-auto pt-3 d-flex flex-column justify-content-center align-items-center"
         >
           <!-- header -->
-          <h3>Say Hi!</h3>
-          <!-- ! Pointing the action-attribute of your form to our URL will enable submissions to be sent to your email address. -->
-          <!-- ! THIS FORM IS POWERED BY https://formsubmit.co API. -->
-          <form
-            action="https://formsubmit.co/your@email.com-or-your-random-string"
-            method="POST"
-          >
-            <!-- * hidden form inputs needed by formsubmit.co to perform other form functions. -->
-            <div>
-              <!-- ! _next -->
-              <!-- ? By default, after submitting a form the user is shown the FormSubmit "Thank You" page. You can provide an alternative URL for "Thank You" page. -->
-              <input
-                type="hidden"
-                name="_next"
-                value="https://yourdomain.co/thanks.html"
-              />
-
-              <!-- ! _subject -->
-              <!-- ? This value is used for the email's subject, so that you can quickly reply to submissions without having to edit the subject line each time. -->
-              <input
-                type="hidden"
-                name="_subject"
-                value="Enquiry from Glamz Beaut!"
-              />
-
-              <!-- ! _honeypot -->
-              <!-- ? Add this "honeypot" field to avoid spam by fooling scrapers. If a value is provided, the submission will be silently ignored. The input should be hidden with CSS. All forms come with reCAPTCHA, which uses advanced machine learning techniques to distinguish between humans and bots, so for most forms this isn't necessary. -->
-              <input type="text" name="_honey" style="display: none" />
-
-              <!-- ! _captcha -->
-              <!-- ? Don't want your users to complete a reCAPTCHA? Each form now comes with the option to disable the reCAPTCHA, so you can maintain complete control over your form. You can even keep reCAPTCHA on a few forms that might be suceptible to spam, while disabling it on others. -->
-              <input type="hidden" name="_captcha" value="false" />
-            </div>
-
-            <!-- * form inputs visible to the user needed by formsubmit.co to perform other form functions. -->
-            <!-- ? Include a name attribute in all form elements (i.e. <input>, <select>, and <textarea>) to receive the submission data. -->
-
+          <h3>Book an appointment today!</h3>
+          <form>
             <!-- input name -->
             <div class="mb-3 row">
               <label class="form-label" for="name">Your name</label>
@@ -332,8 +307,6 @@
                 required
               ></textarea>
             </div>
-
-            <!-- ? Submit the form once. This first-time-use will trigger an email requesting confirmation. Note enter the correct client email. You can also get a random-like string to replace your naked email address in the action attribute of your form. Your email address will remain unknown to spam-bots and human visitors. This random string will send to you when you confirm your email address. -->
             <!-- submit button -->
             <div class="mb-3 row">
               <label class="form-label" for="submit" hidden></label>
@@ -352,12 +325,7 @@
         class="d-flex flex-column justify-content-center align-items-center bg-dark p-3"
       >
         <address>
-          <a href="#"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-          <a href="#"><i class="fab fa-whatsapp fa-lg fa-fw"></i></a>
-          <a href="#"><i class="fas fa-envelope fa-lg fa-fw"></i></a>
-        </address>
-        <address>
-          <a href="#">@glamzbeaut</a>
+          <p>@glamzbeaut</p>
           <p>Lagos, Nigeria</p>
         </address>
       </footer>
